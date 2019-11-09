@@ -3,15 +3,15 @@
 ; See LICENSE
 
 [Setup]
-AppName=Monero GUI Wallet
+AppName=Crypcore GUI Wallet
 ; For InnoSetup this is the property that uniquely identifies the application as such
 ; Thus it's important to keep this stable over releases
 ; With a different "AppName" InnoSetup would treat a mere update as a completely new application and thus mess up
 
 AppVersion=0.15.0.0
-DefaultDirName={pf}\Monero GUI Wallet
-DefaultGroupName=Monero GUI Wallet
-UninstallDisplayIcon={app}\monero-wallet-gui.exe
+DefaultDirName={pf}\Crypcore GUI Wallet
+DefaultGroupName=Crypcore GUI Wallet
+UninstallDisplayIcon={app}\crypcore-wallet-gui.exe
 PrivilegesRequired=admin
 ArchitecturesInstallIn64BitMode=x64
 ArchitecturesAllowed=x64
@@ -19,8 +19,8 @@ WizardSmallImageFile=WizardSmallImage.bmp
 WizardImageFile=WelcomeImage.bmp
 DisableWelcomePage=no
 LicenseFile=LICENSE
-AppPublisher=The Monero Developer Community
-AppPublisherURL=https://getmonero.org
+AppPublisher=Crypcore
+AppPublisherURL=https://crypcore.com
 TimeStampsInUTC=yes
 CompressionThreads=1
 
@@ -58,7 +58,7 @@ Name: "en"; MessagesFile: "compiler:Default.isl"
 ; .exe/.dll file possibly with version info).
 ;
 ; This is far more robust than relying on version info or on file dates (flag "comparetimestamp").
-; As of version 0.15.0.0, the Monero .exe files do not carry version info anyway in their .exe headers.
+; As of version 0.15.0.0, the Crypcore .exe files do not carry version info anyway in their .exe headers.
 ; The only small drawback seems to be somewhat longer update times because each and every file is
 ; copied again, even if already present with correct file date and identical content.
 ;
@@ -69,33 +69,33 @@ Source: "ReadMe.htm"; DestDir: "{app}"; Flags: ignoreversion
 Source: "FinishImage.bmp"; Flags: dontcopy
 
 ; Monero GUI wallet exe and guide
-Source: "bin\monero-wallet-gui.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\monero-gui-wallet-guide.pdf"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-wallet-gui.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-gui-wallet-guide.pdf"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Monero CLI wallet
-Source: "bin\monero-wallet-cli.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\monero-gen-trusted-multisig.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-wallet-cli.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-gen-trusted-multisig.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Monero wallet RPC interface implementation
-Source: "bin\monero-wallet-rpc.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-wallet-rpc.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Monero daemon
-Source: "bin\monerod.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcored.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Monero daemon wrapped in a batch file that stops before the text window closes, to see any error messages
-Source: "monero-daemon.bat"; DestDir: "{app}"; Flags: ignoreversion;
+Source: "crypcore-daemon.bat"; DestDir: "{app}"; Flags: ignoreversion;
 
 ; Monero blockchain utilities
-Source: "bin\monero-blockchain-export.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\monero-blockchain-import.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\monero-blockchain-mark-spent-outputs.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\monero-blockchain-usage.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\monero-blockchain-import.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\monero-blockchain-ancestry.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\monero-blockchain-depth.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\monero-blockchain-prune-known-spent-data.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\monero-blockchain-prune.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\monero-blockchain-stats.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-blockchain-export.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-blockchain-import.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-blockchain-mark-spent-outputs.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-blockchain-usage.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-blockchain-import.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-blockchain-ancestry.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-blockchain-depth.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-blockchain-prune-known-spent-data.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-blockchain-prune.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\crypcore-blockchain-stats.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Qt Quick 2D Renderer fallback for systems / environments with "low-level graphics" i.e. without 3D support
 Source: "bin\start-low-graphics-mode.bat"; DestDir: "{app}"; Flags: ignoreversion
@@ -172,7 +172,7 @@ Name: desktopicon; Description: "Create a &desktop icon"; GroupDescription: "Add
 Filename: "{app}\ReadMe.htm"; Description: "Show ReadMe"; Flags: postinstall shellexec skipifsilent
 
 ; DON'T offer to run the wallet right away, let the people read about initial blockchain download first in the ReadMe
-; Filename: "{app}\monero-wallet-gui.exe"; Description: "Run GUI Wallet now"; Flags: postinstall nowait skipifsilent
+; Filename: "{app}\crypcore-wallet-gui.exe"; Description: "Run GUI Wallet now"; Flags: postinstall nowait skipifsilent
 
 
 [Code]
@@ -196,7 +196,7 @@ begin
 
   // Additional wizard page for entering a special blockchain location
   blockChainDefaultDir := ExpandConstant('{commonappdata}\crypcore');
-  s := 'The default folder to store the Monero blockchain is ' + blockChainDefaultDir;
+  s := 'The default folder to store the Crypcore blockchain is ' + blockChainDefaultDir;
   s := s + '. As this will need more than 74 GB of free space, you may want to use a folder on a different drive.';
   s := s + ' If yes, specify that folder here.';
 
@@ -208,7 +208,7 @@ begin
 
   // Evaluate proposal for the blockchain location
   // In case of an update take the blockchain location from the actual setting in the registry
-  RegQueryStringValue(HKEY_CURRENT_USER, 'Software\monero-project\monero-core', 'blockchainDataDir', blockChainDir);
+  RegQueryStringValue(HKEY_CURRENT_USER, 'Software\crypcore-project\crypcore-core', 'blockchainDataDir', blockChainDir);
   if blockChainDir = '' then begin
     blockChainDir := GetPreviousData('BlockChainDir', '');
   end;
@@ -289,12 +289,12 @@ procedure CurStepChanged(CurStep: TSetupStep);
 var s: TArrayOfString;
 begin
   if CurStep = ssPostInstall then begin
-    // Re-build "monero-daemon.bat" according to actual install and blockchain directory used
+    // Re-build "crypcore-daemon.bat" according to actual install and blockchain directory used
     SetArrayLength(s, 3);
-    s[0] := 'REM Execute the Monero daemon and then stay with window open after it exits';
-    s[1] := '"' + ExpandConstant('{app}\monerod.exe') + '" ' + DaemonFlags('');
+    s[0] := 'REM Execute the Crypcore daemon and then stay with window open after it exits';
+    s[1] := '"' + ExpandConstant('{app}\crypcored.exe') + '" ' + DaemonFlags('');
     s[2] := 'PAUSE';
-    SaveStringsToFile(ExpandConstant('{app}\monero-daemon.bat'), s, false); 
+    SaveStringsToFile(ExpandConstant('{app}\crypcore-daemon.bat'), s, false); 
   end;
 end;
 
@@ -310,55 +310,55 @@ end;
 
 
 [Icons]
-; Icons in the "Monero GUI Wallet" program group
+; Icons in the "Crypcore GUI Wallet" program group
 ; Windows will almost always display icons in alphabetical order, per level, so specify the text accordingly
-Name: "{group}\GUI Wallet"; Filename: "{app}\monero-wallet-gui.exe";
-Name: "{group}\GUI Wallet Guide"; Filename: "{app}\monero-GUI-guide.pdf"; IconFilename: "{app}\monero-wallet-gui.exe"
+Name: "{group}\GUI Wallet"; Filename: "{app}\crypcore-wallet-gui.exe";
+Name: "{group}\GUI Wallet Guide"; Filename: "{app}\crypcore-GUI-guide.pdf"; IconFilename: "{app}\crypcore-wallet-gui.exe"
 Name: "{group}\Uninstall GUI Wallet"; Filename: "{uninstallexe}"
 
 ; Sub-folder "Utilities";
 ; Note that Windows 10, unlike Windows 7, ignores such sub-folders completely
 ; and insists on displaying ALL icons on one single level
-Name: "{group}\Utilities\Monero Daemon"; Filename: "{app}\monerod.exe"; Parameters: {code:DaemonFlags}
+Name: "{group}\Utilities\Crypcore Daemon"; Filename: "{app}\crypcored.exe"; Parameters: {code:DaemonFlags}
 Name: "{group}\Utilities\Read Me"; Filename: "{app}\ReadMe.htm"
 
 ; CLI wallet: Needs a working directory ("Start in:") set in the icon, because with no such directory set
 ; it tries to create new wallets without a path given in the probably non-writable program folder and will abort with an error
-Name: "{group}\Utilities\Textual (CLI) Wallet"; Filename: "{app}\monero-wallet-cli.exe"; WorkingDir: "{userdocs}\Monero\wallets"
+Name: "{group}\Utilities\Textual (CLI) Wallet"; Filename: "{app}\crypcore-wallet-cli.exe"; WorkingDir: "{userdocs}\crypcore\wallets"
 
 ; Icons for troubleshooting problems / testing / debugging
 ; To show that they are in some way different (not for everyday use), make them visually different
 ; from the others by text, and make them sort at the end by the help of "x" in front 
 Name: "{group}\Utilities\x (Check Blockchain Folder)"; Filename: "{win}\Explorer.exe"; Parameters: {code:BlockChainDir}
 Name: "{group}\Utilities\x (Check Daemon Log)"; Filename: "Notepad"; Parameters: {code:DaemonLog}
-Name: "{group}\Utilities\x (Check Default Wallet Folder)"; Filename: "{win}\Explorer.exe"; Parameters: """{userdocs}\Monero\wallets"""
-Name: "{group}\Utilities\x (Check GUI Wallet Log)"; Filename: "Notepad"; Parameters: """{userappdata}\monero-wallet-gui\monero-wallet-gui.log"""
-Name: "{group}\Utilities\x (Try Daemon, Exit Confirm)"; Filename: "{app}\monero-daemon.bat"
+Name: "{group}\Utilities\x (Check Default Wallet Folder)"; Filename: "{win}\Explorer.exe"; Parameters: """{userdocs}\crypcore\wallets"""
+Name: "{group}\Utilities\x (Check GUI Wallet Log)"; Filename: "Notepad"; Parameters: """{userappdata}\crypcore-wallet-gui\crypcore-wallet-gui.log"""
+Name: "{group}\Utilities\x (Try Daemon, Exit Confirm)"; Filename: "{app}\crypcore-daemon.bat"
 Name: "{group}\Utilities\x (Try GUI Wallet Low Graphics Mode)"; Filename: "{app}\start-low-graphics-mode.bat"
-Name: "{group}\Utilities\x (Try Kill Daemon)"; Filename: "Taskkill.exe"; Parameters: "/IM monerod.exe /T /F"
+Name: "{group}\Utilities\x (Try Kill Daemon)"; Filename: "Taskkill.exe"; Parameters: "/IM crypcored.exe /T /F"
 
 ; Desktop icons, optional with the help of the "Task" section
-Name: "{commondesktop}\GUI Wallet"; Filename: "{app}\monero-wallet-gui.exe"; Tasks: desktopicon
+Name: "{commondesktop}\GUI Wallet"; Filename: "{app}\crypcore-wallet-gui.exe"; Tasks: desktopicon
 
 
 [Registry]
 ; Store any special flags for the daemon in the registry location where the GUI wallet will take it from
 ; So if the wallet is used to start the daemon instead of the separate icon the wallet will pass the correct flags
 ; Side effect, mostly positive: The uninstaller will clean the registry
-Root: HKCU; Subkey: "Software\monero-project"; Flags: uninsdeletekeyifempty
-Root: HKCU; Subkey: "Software\monero-project\monero-core"; Flags: uninsdeletekey
-Root: HKCU; Subkey: "Software\monero-project\monero-core"; ValueType: string; ValueName: "blockchainDataDir"; ValueData: {code:BlockChainDirOrEmpty};
+Root: HKCU; Subkey: "Software\crypcore-project"; Flags: uninsdeletekeyifempty
+Root: HKCU; Subkey: "Software\crypcore-project\crypcore-core"; Flags: uninsdeletekey
+Root: HKCU; Subkey: "Software\crypcore-project\crypcore-core"; ValueType: string; ValueName: "blockchainDataDir"; ValueData: {code:BlockChainDirOrEmpty};
 
-; Configure a custom URI scheme: Links starting with "monero:" will start the GUI wallet exe with the URI as command-line parameter
-; Used to easily start payments; example URI: "monero://<address>?tx_amount=5.0"
-Root: HKCR; Subkey: "monero"; ValueType: "string"; ValueData: "URL:Monero Payment Protocol"; Flags: uninsdeletekey
-Root: HKCR; Subkey: "monero"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
-Root: HKCR; Subkey: "monero\DefaultIcon"; ValueType: "string"; ValueData: "{app}\monero-wallet-gui.exe,0"
-Root: HKCR; Subkey: "monero\shell\open\command"; ValueType: "string"; ValueData: """{app}\monero-wallet-gui.exe"" ""%1"""
+; Configure a custom URI scheme: Links starting with "crypcore:" will start the GUI wallet exe with the URI as command-line parameter
+; Used to easily start payments; example URI: "crypcore://<address>?tx_amount=5.0"
+Root: HKCR; Subkey: "crypcore"; ValueType: "string"; ValueData: "URL:Crypcore Payment Protocol"; Flags: uninsdeletekey
+Root: HKCR; Subkey: "crypcore"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
+Root: HKCR; Subkey: "crypcore\DefaultIcon"; ValueType: "string"; ValueData: "{app}\crypcore-wallet-gui.exe,0"
+Root: HKCR; Subkey: "crypcore\shell\open\command"; ValueType: "string"; ValueData: """{app}\crypcore-wallet-gui.exe"" ""%1"""
 
-; Configure a custom URI scheme: Links starting with "moneroseed:" will start the GUI wallet exe with the URI as command-line parameter
-; Used to easily hand over custom seed node info to the wallet, with an URI of the form "moneroseed://a.b.c.d:port"
-Root: HKCR; Subkey: "moneroseed"; ValueType: "string"; ValueData: "URL:Monero Seed Node Protocol"; Flags: uninsdeletekey
-Root: HKCR; Subkey: "moneroseed"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
-Root: HKCR; Subkey: "moneroseed\DefaultIcon"; ValueType: "string"; ValueData: "{app}\monero-wallet-gui.exe,0"
-Root: HKCR; Subkey: "moneroseed\shell\open\command"; ValueType: "string"; ValueData: """{app}\monero-wallet-gui.exe"" ""%1"""
+; Configure a custom URI scheme: Links starting with "crypcoreseed:" will start the GUI wallet exe with the URI as command-line parameter
+; Used to easily hand over custom seed node info to the wallet, with an URI of the form "crypcoreseed://a.b.c.d:port"
+Root: HKCR; Subkey: "crypcoreseed"; ValueType: "string"; ValueData: "URL:Crypcore Seed Node Protocol"; Flags: uninsdeletekey
+Root: HKCR; Subkey: "crypcoreseed"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
+Root: HKCR; Subkey: "crypcoreseed\DefaultIcon"; ValueType: "string"; ValueData: "{app}\crypcore-wallet-gui.exe,0"
+Root: HKCR; Subkey: "crypcoreseed\shell\open\command"; ValueType: "string"; ValueData: """{app}\crypcore-wallet-gui.exe"" ""%1"""
