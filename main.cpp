@@ -125,13 +125,13 @@ int main(int argc, char *argv[])
 //    qDebug() << "High DPI auto scaling - enabled";
 //#endif
 
-    // Turn off colors in monerod log output.
+    // Turn off colors in crypcored log output.
     qputenv("TERM", "goaway");
 
     MainApp app(argc, argv);
 
     app.setApplicationName("monero-core");
-    app.setOrganizationDomain("getmonero.org");
+    app.setOrganizationDomain("crypcore.com");
     app.setOrganizationName("monero-project");
 
     // Ask to enable Tails OS persistence mode, it affects:

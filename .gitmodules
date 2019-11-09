@@ -1,0 +1,4 @@
+[submodule "Crypcore"]
+	path = Crypcore
+	url = https://github.com/crypcore/Crypcore
+	ignore = all
