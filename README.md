@@ -9,7 +9,7 @@ Copyright (c) 2014-2019, The Monero Project
 - Mail: [dev@getmonero.org](mailto:dev@getmonero.org)
 - Github: [https://github.com/monero-project/monero-gui](https://github.com/monero-project/monero-gui)
 - IRC: [#monero-dev on Freenode](irc://chat.freenode.net/#monero-dev)
-- Translation platform (Weblate): [translate.getmonero.org](https://translate.getmonero.org)
+- Translation platform (Pootle): [translate.getmonero.org](https://translate.getmonero.org)
 
 ## Vulnerability response
 
@@ -75,8 +75,6 @@ Packaging for your favorite distribution would be a welcome contribution!
 
 ## Compiling the Monero GUI from source
 
-*Note*: Qt 5.9.7 is the minimum version required to build the GUI.
-
 ### On Linux:
 
 (Tested on Ubuntu 17.10 x64, Ubuntu 18.04 x64 and Gentoo x64)
@@ -85,7 +83,7 @@ Packaging for your favorite distribution would be a welcome contribution!
 
   - For Debian distributions (Debian, Ubuntu, Mint, Tails...)
 
-	`sudo apt install build-essential cmake libboost-all-dev miniupnpc libunbound-dev graphviz doxygen libunwind8-dev pkg-config libssl-dev libzmq3-dev libsodium-dev libhidapi-dev libnorm-dev libusb-1.0-0-dev libpgm-dev`
+	`sudo apt install build-essential cmake libboost-all-dev miniupnpc libunbound-dev graphviz doxygen libunwind8-dev pkg-config libssl-dev libzmq3-dev libsodium-dev libhidapi-dev`
 
   - For Gentoo
 
@@ -97,7 +95,7 @@ Packaging for your favorite distribution would be a welcome contribution!
 
 2. Install Qt:
 
-  *Note*: The Qt 5.9.7 or newer requirement makes **some** distributions (mostly based on debian, like Ubuntu 16.x or Linux Mint 18.x) obsolete due to their repositories containing an older Qt version.
+  *Note*: Qt 5.9.7 is the minimum version required to build the GUI. This makes **some** distributions (mostly based on debian, like Ubuntu 16.x or Linux Mint 18.x) obsolete due to their repositories containing an older Qt version.
 
  The recommended way is to install 5.9.7 from the [official Qt installer](https://www.qt.io/download-qt-installer) or [compiling it yourself](https://wiki.qt.io/Install_Qt_5_on_Ubuntu). This ensures you have the correct version. Higher versions *can* work but as it differs from our production build target, slight differences may occur.
 
@@ -126,12 +124,12 @@ The following instructions will fetch Qt from your distribution's repositories i
 
 3. Clone repository
 
-    `git clone https://github.com/monero-project/monero-gui.git`
+    `git clone https://github.com/crypcore/crypcore-gui.git`
 
 4. Build
 
     ```
-    cd monero-gui
+    cd crypcore-gui
     QT_SELECT=5 ./build.sh
     ```
 
@@ -167,16 +165,17 @@ The executable can be found in the build/release/bin folder.
 
 5. Add the Qt bin directory to your path
 
-  - Example for Qt: `export PATH=$PATH:$HOME/Qt/5.9.7/clang_64/bin`
-  - Example for Homebrew: `export PATH=$PATH:/usr/local/opt/qt/bin`
+    Example: `export PATH=$PATH:$HOME/Qt/5.9.7/clang_64/bin`
 
-6. Grab an up-to-date copy of the monero-gui repository
+    This is the directory where Qt 5.x is installed on **your** system
 
-  `git clone https://github.com/monero-project/monero-gui.git`
+6. Grab an up-to-date copy of the crypcore-gui repository
+
+  `git clone https://github.com/crypcore/crypcore-gui.git`
 
 7. Go into the repository
 
-  `cd monero-gui`
+  `cd crypcore-gui`
 
 8. Start the build
 
@@ -236,18 +235,18 @@ The Monero GUI on Windows is 64 bits only; 32-bit Windows GUI builds are not off
 6. Clone repository
 
     ```
-    git clone https://github.com/monero-project/monero-gui.git
+    git clone https://github.com/crypcore/crypcore-gui.git
     ```
 
 7. Build
 
     ```
-    cd monero-gui
+    cd crypcore-gui
     source ./build.sh release-static
     cd build
     make deploy
     ```
 
-    **Note:** The use of `source` above is a dirty workaround for a suspected bug in the current QT version 5.11.2-3 available in the MSYS2 packaging system, see https://github.com/monero-project/monero-gui/issues/1559 for more info.
+    **Note:** The use of `source` above is a dirty workaround for a suspected bug in the current QT version 5.11.2-3 available in the MSYS2 packaging system, see https://github.com/crypcore/crypcore-gui/issues/1559 for more info.
 
 The executable can be found in the `.\release\bin` directory.
