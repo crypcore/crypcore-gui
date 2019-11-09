@@ -1,5 +1,5 @@
-# Monero GUI
-
+# Crypcore GUI
+Forked From Monero GUI
 Copyright (c) 2014-2019, The Monero Project
 
 ## Development resources
