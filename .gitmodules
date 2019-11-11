@@ -2,8 +2,3 @@
 	path = Crypcore
 	url = https://github.com/crypcore/Crypcore
 	ignore = all
-[submodule "monero"]
-	path = monero
-	url = https://github.com/monero-project/monero.git
-	ignore = all
-
