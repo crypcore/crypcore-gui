@@ -7,7 +7,7 @@ TEMPLATE = app
 
 QT += svg qml gui-private quick widgets
 
-WALLET_ROOT=$$PWD/Crypcore
+WALLET_ROOT=$$PWD/crypcore
 
 CONFIG += c++11 link_pkgconfig
 packagesExist(libusb-1.0) {
@@ -502,7 +502,7 @@ OTHER_FILES += \
 
 DISTFILES += \
     notes.txt \
-    Crypcore/src/wallet/CMakeLists.txt
+    crypcore/src/wallet/CMakeLists.txt
 
 
 # windows application icon

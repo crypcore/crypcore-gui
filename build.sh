@@ -64,7 +64,7 @@ fi
 source ./utils.sh
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-MONERO_DIR=Crypcore
+MONERO_DIR=crypcore
 MONEROD_EXEC=crypcored
 
 MAKE='make'
@@ -79,7 +79,7 @@ export BUILD_TREZOR
 # build zxcvbn
 if [ "$DISABLE_PASS_STRENGTH_METER" != true ]; then
     $MAKE -C src/zxcvbn-c || exit
-fi
+fipcore
 
 if [ ! -d build ]; then mkdir build; fi
 
