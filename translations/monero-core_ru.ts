@@ -3554,7 +3554,7 @@ your input may be required.</source>
     <message>
         <location filename="../main.qml" line="1077"/>
         <source>This address received %1 crypcore, but the transaction is not yet mined</source>
-        <translation>Этот адрес получил %1 XMR, но транзакции все еще не подтверждены майнерами</translation>
+        <translation>Этот адрес получил %1 COR, но транзакции все еще не подтверждены майнерами</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1084"/>
