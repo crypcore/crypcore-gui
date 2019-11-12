@@ -240,7 +240,7 @@ Rectangle {
                         if (persistentSettings.fiatPriceEnabled && persistentSettings.fiatPriceToggle) {
                             return persistentSettings.fiatPriceCurrency == "xmrusd" ? "USD" : "EUR"
                         } else {
-                            return "XMR"
+                            return "COR"
                         }
                     }
                     color: MoneroComponents.Style.blackTheme ? "white" : "black"
