@@ -69,8 +69,8 @@
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="105"/>
-        <source>This makes it easier to send or receive Monero and reduces errors when typing in addresses manually.</source>
-        <translation>Це полегшує надсилання та отримання Monero і знижує кількість помилок при введенні адрес вручну.</translation>
+        <source>This makes it easier to send or receive Crypcore and reduces errors when typing in addresses manually.</source>
+        <translation>Це полегшує надсилання та отримання Crypcore і знижує кількість помилок при введенні адрес вручну.</translation>
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="120"/>
@@ -498,13 +498,13 @@
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="62"/>
-        <source>WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
-        <translation>ПОПЕРЕДЖЕННЯ: Не використовуйте повторно свої ключі Monero в іншому форку, ЯКЩО ТІЛЬКИ цей форк не має вбудованих засобів захисту від компрометації введених ключів. Подібні дії можуть зашкодити вашій конфіденційності.</translation>
+        <source>WARNING: Do not reuse your Crypcore keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <translation>ПОПЕРЕДЖЕННЯ: Не використовуйте повторно свої ключі Crypcore в іншому форку, ЯКЩО ТІЛЬКИ цей форк не має вбудованих засобів захисту від компрометації введених ключів. Подібні дії можуть зашкодити вашій конфіденційності.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="85"/>
-        <source>WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Monero. Please write down your seed manually.</source>
-        <translation>УВАГА: Копіювання вашої мнемонічної фрази в буфер обміну може супроводжуватися перехопленням цих даних різним шкідливим програмним забезпеченням, яке відправить вашу мнемоніку зловмисникові, після чого ваші Monero можуть бути вкрадені. Будь ласка, введіть вашу мнемонічну фразу вручну з клавіатури.</translation>
+        <source>WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Crypcore. Please write down your seed manually.</source>
+        <translation>УВАГА: Копіювання вашої мнемонічної фрази в буфер обміну може супроводжуватися перехопленням цих даних різним шкідливим програмним забезпеченням, яке відправить вашу мнемоніку зловмисникові, після чого ваші Crypcore можуть бути вкрадені. Будь ласка, введіть вашу мнемонічну фразу вручну з клавіатури.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="106"/>
@@ -917,12 +917,12 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="71"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.
+        <source>Mining with your computer helps strengthen the Crypcore network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.
 
-Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Майнінг на вашому комп&apos;ютері допомагає зміцнити мережу Monero. Чим більше людей майнять, тим важче атакувати мережу, кожний може допомогти.
+Mining also gives you a small chance to earn some Crypcore. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>Майнінг на вашому комп&apos;ютері допомагає зміцнити мережу Crypcore. Чим більше людей майнять, тим важче атакувати мережу, кожний може допомогти.
 
-Майнінг також дає маленький шанс отримати Monero. Ваш комп&apos;ютер буде створювати хеші в пошуку вирішення блоку. Якщо ви знайдете блок, то получите винагороду! Щасти!</translation>
+Майнінг також дає маленький шанс отримати Crypcore. Ваш комп&apos;ютер буде створювати хеші в пошуку вирішення блоку. Якщо ви знайдете блок, то получите винагороду! Щасти!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="83"/>
@@ -1260,8 +1260,8 @@ Mining also gives you a small chance to earn some Monero. Your computer will cre
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="100"/>
-        <source>Embedded Monero version: </source>
-        <translation>Вбудована версія Monero: </translation>
+        <source>Embedded Crypcore version: </source>
+        <translation>Вбудована версія Crypcore: </translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="130"/>
@@ -1475,13 +1475,13 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="238"/>
-        <source>Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.</source>
-        <translation>Використовувати сторонній вузол для підключення до мережі Monero. Менш безпечно, але більш зручно.</translation>
+        <source>Uses a third-party server to connect to the Crypcore network. Less secure, but easier on your computer.</source>
+        <translation>Використовувати сторонній вузол для підключення до мережі Crypcore. Менш безпечно, але більш зручно.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="284"/>
-        <source>To find a remote node, type &apos;Monero remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
-        <translation>Щоб отримати список віддалених нод, введіть &apos;Monero remote node&apos; у вашій улюбленій пошуковій системі. Будь ласка, переконайтеся, що обраній ноді можна довіряти.</translation>
+        <source>To find a remote node, type &apos;Crypcore remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <translation>Щоб отримати список віддалених нод, введіть &apos;Crypcore remote node&apos; у вашій улюбленій пошуковій системі. Будь ласка, переконайтеся, що обраній ноді можна довіряти.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="292"/>
@@ -1698,8 +1698,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="104"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>На цій сторінці можна взаємодіяти із загальною базою даних RingDB. Ця база даних призначена для використання гаманцями Monero або їх клонів, які зможуть повторно використовувати ключі Monero.</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Crypcore wallets as well as wallets from Crypcore clones which reuse the Crypcore keys.</source>
+        <translation>На цій сторінці можна взаємодіяти із загальною базою даних RingDB. Ця база даних призначена для використання гаманцями Crypcore або їх клонів, які зможуть повторно використовувати ключі Crypcore.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="117"/>
@@ -1715,8 +1715,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="120"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
-        <translation>Для того щоб приховати які входи в транзакціях Monero були витрачені, третя сторона не повинна повідомляти які входи в кільці вже задіяні в витраті. Адже якщо це зробити, то це послабить захист, який забезпечується кільцевими підписами. Якщо відомо, що всі, крім одного з входів, вже витрачені, то фактично трата входу стає очевидною, тим самим анулюється ефект кільцевих підписів, одного з трьох основних рівнів захисту конфіденційності Monero.&lt;br&gt;Щоб допомогти транзакціям уникнути витрати цих входів, можна використовувати список відомих витрачених входів, щоб уникнути їх використання в нових транзакціях. Такий список підтримується проектом Monero і доступний на веб-сайті getmonero.org, і ви можете імпортувати цей список тут.&lt;br&gt;Крім того, ви можете просканувати блокчейн (і блокчейни клонів Monero) самостійно, використовуючи інструмент monero-blockchain-mark-spent-outputs, щоб створити список відомих витрачених входів.&lt;br&gt;</translation>
+        <source>In order to obscure which inputs in a Crypcore transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Crypcore uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Crypcore project and is available on the crypcore.com website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Crypcore clones) yourself using the crypcore-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <translation>Для того щоб приховати які входи в транзакціях Crypcore були витрачені, третя сторона не повинна повідомляти які входи в кільці вже задіяні в витраті. Адже якщо це зробити, то це послабить захист, який забезпечується кільцевими підписами. Якщо відомо, що всі, крім одного з входів, вже витрачені, то фактично трата входу стає очевидною, тим самим анулюється ефект кільцевих підписів, одного з трьох основних рівнів захисту конфіденційності Crypcore.&lt;br&gt;Щоб допомогти транзакціям уникнути витрати цих входів, можна використовувати список відомих витрачених входів, щоб уникнути їх використання в нових транзакціях. Такий список підтримується проектом Crypcore і доступний на веб-сайті crypcore.com, і ви можете імпортувати цей список тут.&lt;br&gt;Крім того, ви можете просканувати блокчейн (і блокчейни клонів Crypcore) самостійно, використовуючи інструмент crypcore-blockchain-mark-spent-outputs, щоб створити список відомих витрачених входів.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="141"/>
@@ -1786,13 +1786,13 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="257"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>Щоб уникнути скасування захисту, що забезпечується кільцевими підписами Monero, вихід не повинен проводитися з різними кільцями на різних блокчейнах. Хоча це як правило не викликає занепокоєння, він може стати одним, якщо якийсь клон Monero, що використовує ключ повторно, дозволяє вам витрачати існуючі виходи. В цьому випадку вам необхідно забезпечити, щоб ці існуючі виходи використовували одне і те ж кільце для обох блокчейнів.&lt;br&gt;Це може бути зроблено автоматично, або будь-яким програмним забезпеченням з можливістю повторного використання ключів, яке не спробує позбавити вас конфіденційності.&lt;br&gt;Якщо ви використовуєте клон Monero з повторним використанням ключа, і цей клон не включає цей захист, ви все одно можете гарантувати, що ваші транзакції будуть захищені, зробивши їх спочатку на клоні, потім вручну додати кільце на цій сторінці, що дозволить вам конфіденційно перевести ваші Monero.&lt;br&gt;Якщо ви не використовуєте клон Monero з повторним використанням ключів без цих функцій безпеки, то вам не потрібно нічого робити, оскільки все автоматизовано.&lt;br&gt;</translation>
+        <source>In order to avoid nullifying the protection afforded by Crypcore&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Crypcore clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Crypcore and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Crypcore clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Crypcore safely.&lt;br&gt;If you do not use a key-reusing Crypcore clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <translation>Щоб уникнути скасування захисту, що забезпечується кільцевими підписами Crypcore, вихід не повинен проводитися з різними кільцями на різних блокчейнах. Хоча це як правило не викликає занепокоєння, він може стати одним, якщо якийсь клон Crypcore, що використовує ключ повторно, дозволяє вам витрачати існуючі виходи. В цьому випадку вам необхідно забезпечити, щоб ці існуючі виходи використовували одне і те ж кільце для обох блокчейнів.&lt;br&gt;Це може бути зроблено автоматично, або будь-яким програмним забезпеченням з можливістю повторного використання ключів, яке не спробує позбавити вас конфіденційності.&lt;br&gt;Якщо ви використовуєте клон Crypcore з повторним використанням ключа, і цей клон не включає цей захист, ви все одно можете гарантувати, що ваші транзакції будуть захищені, зробивши їх спочатку на клоні, потім вручну додати кільце на цій сторінці, що дозволить вам конфіденційно перевести ваші Crypcore.&lt;br&gt;Якщо ви не використовуєте клон Crypcore з повторним використанням ключів без цих функцій безпеки, то вам не потрібно нічого робити, оскільки все автоматизовано.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="279"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>Тут записуються кільця, що використовуються виходами проведеними на Monero, так що одне і те ж кільце можна використовувати повторно, щоб уникнути проблем з конфіденційністю.</translation>
+        <source>This records rings used by outputs spent on Crypcore on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <translation>Тут записуються кільця, що використовуються виходами проведеними на Crypcore, так що одне і те ж кільце можна використовувати повторно, щоб уникнути проблем з конфіденційністю.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="290"/>
@@ -1976,8 +1976,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="344"/>
-        <source>Enter the Monero Address (example: 44AFFq5kSiGBoZ...)</source>
-        <translation>Введіть адресу Monero (наприклад: 44AFFq5kSiGBoZ...)</translation>
+        <source>Enter the Crypcore Address (example: cczJhFFq5kSiGoZ...)</source>
+        <translation>Введіть адресу Crypcore (наприклад: cczJhFFq5kSiGoZ...)</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="355"/>
@@ -2192,8 +2192,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="622"/>
-        <source>Monero sent successfully</source>
-        <translation>Monero відправлено успішно</translation>
+        <source>Crypcore sent successfully</source>
+        <translation>Crypcore відправлено успішно</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="705"/>
@@ -2662,8 +2662,8 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardCreateWallet3.qml" line="60"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.</source>
-        <translation>Щоб мати можливість обмінюватися даними з мережею Monero, ваш гаманець повинен бути підключений до ноди Monero. Для кращої конфіденційності рекомендується запустити свою власну ноду.</translation>
+        <source>To be able to communicate with the Crypcore network your wallet needs to be connected to a Crypcore node. For best privacy it&apos;s recommended to run your own node.</source>
+        <translation>Щоб мати можливість обмінюватися даними з мережею Crypcore, ваш гаманець повинен бути підключений до ноди Crypcore. Для кращої конфіденційності рекомендується запустити свою власну ноду.</translation>
     </message>
 </context>
 <context>
@@ -2713,8 +2713,8 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="121"/>
-        <source>Additionally, you may specify a bootstrap node to use Monero immediately.</source>
-        <translation>Окрім цього, ви можете вказати ноду швидкого завантаження, щоб негайно почати користуватися Monero.</translation>
+        <source>Additionally, you may specify a bootstrap node to use Crypcore immediately.</source>
+        <translation>Окрім цього, ви можете вказати ноду швидкого завантаження, щоб негайно почати користуватися Crypcore.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="175"/>
@@ -2726,8 +2726,8 @@ your input may be required.</source>
     <name>WizardHome</name>
     <message>
         <location filename="../wizard/WizardHome.qml" line="61"/>
-        <source>Welcome to Monero.</source>
-        <translation>Вас вітає Monero.</translation>
+        <source>Welcome to Crypcore.</source>
+        <translation>Вас вітає Crypcore.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="66"/>
@@ -2736,8 +2736,8 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="67"/>
-        <source>Choose this option if this is your first time using Monero.</source>
-        <translation>Виберіть цю опцію, якщо ви вперше користуєтесь Monero.</translation>
+        <source>Choose this option if this is your first time using Crypcore.</source>
+        <translation>Виберіть цю опцію, якщо ви вперше користуєтесь Crypcore.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="87"/>
@@ -2746,7 +2746,7 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="88"/>
-        <source>Connect your hardware wallet to create a new Monero wallet.</source>
+        <source>Connect your hardware wallet to create a new Crypcore wallet.</source>
         <translation>Створити новий гаманець, підключившись до вашого пристрою-гаманця.</translation>
     </message>
     <message>
@@ -2804,8 +2804,8 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardLang.qml" line="102"/>
-        <source>Change the language of the Monero GUI.</source>
-        <translation>Змінити мову графічного інтерфейсу Monero.</translation>
+        <source>Change the language of the Crypcore GUI.</source>
+        <translation>Змінити мову графічного інтерфейсу Crypcore.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardLang.qml" line="197"/>
@@ -2845,8 +2845,8 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="84"/>
-        <source>Temporary use of remote nodes is useful in order to use Monero immediately (hence the name bootstrap), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
-        <translation>Тимчасове використання віддалених нод зручно для негайного використання Monero (звідси назва &quot;початкове завантаження&quot;), однак пам&apos;ятайте, що при використанні віддалених нод (включаючи вибір початкового завантаження), ноди можуть відстежувати вашу IP адресу, відстежувати вашу &quot;висоту відновлення&quot; і відповідні дані запиту блоку, і відправляти вам неточну інформацію, щоб дізнатися більше про здійснені вами транзакції.</translation>
+        <source>Temporary use of remote nodes is useful in order to use Crypcore immediately (hence the name bootstrap), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
+        <translation>Тимчасове використання віддалених нод зручно для негайного використання Crypcore (звідси назва &quot;початкове завантаження&quot;), однак пам&apos;ятайте, що при використанні віддалених нод (включаючи вибір початкового завантаження), ноди можуть відстежувати вашу IP адресу, відстежувати вашу &quot;висоту відновлення&quot; і відповідні дані запиту блоку, і відправляти вам неточну інформацію, щоб дізнатися більше про здійснені вами транзакції.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="97"/>
@@ -2873,8 +2873,8 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="72"/>
-        <source>This mode is ideal for managing small amounts of Monero. You have access to basic features for making and managing transactions. It will automatically connect to the Monero network so you can start using Monero immediately.</source>
-        <translation>Цей режим ідеально підходить для управління невеликими сумами Monero. У вас є доступ до основних функцій для здійснення транзакцій та управління ними. Програма автоматично підключиться до мережі Monero, щоб ви відразу могли почати використовувати Monero.</translation>
+        <source>This mode is ideal for managing small amounts of Crypcore. You have access to basic features for making and managing transactions. It will automatically connect to the Crypcore network so you can start using Crypcore immediately.</source>
+        <translation>Цей режим ідеально підходить для управління невеликими сумами Crypcore. У вас є доступ до основних функцій для здійснення транзакцій та управління ними. Програма автоматично підключиться до мережі Crypcore, щоб ви відразу могли почати використовувати Crypcore.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="85"/>
@@ -3082,10 +3082,10 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardRestoreWallet3.qml" line="68"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.
+        <source>To be able to communicate with the Crypcore network your wallet needs to be connected to a Crypcore node. For best privacy it&apos;s recommended to run your own node.
 
 If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>Щоб мати можливість обмінюватися даними з мережею Monero, ваш гаманець повинен бути підключений до ноди Monero. Для кращої конфіденційності рекомендується запустити свою власну ноду.
+        <translation>Щоб мати можливість обмінюватися даними з мережею Crypcore, ваш гаманець повинен бути підключений до ноди Crypcore. Для кращої конфіденційності рекомендується запустити свою власну ноду.
 
 Якщо в вас немає можливості запустити власну ноду, є можливість підключитися до віддаленої ноди.</translation>
     </message>
@@ -3433,8 +3433,8 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../main.qml" line="997"/>
-        <source>Monero sent successfully: %1 transaction(s) </source>
-        <translation>Monero успішно відправлені: %1 транзакция(й) </translation>
+        <source>Crypcore sent successfully: %1 transaction(s) </source>
+        <translation>Crypcore успішно відправлені: %1 транзакция(й) </translation>
     </message>
     <message>
         <location filename="../main.qml" line="1037"/>
@@ -3462,7 +3462,7 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../main.qml" line="1080"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
+        <source>This address received %1 crypcore, with %2 confirmation(s).</source>
         <translation>Цей адрес отримав %1 XMR, із %2 підтвердженням(и).</translation>
     </message>
     <message>
@@ -3539,13 +3539,13 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../main.qml" line="2170"/>
-        <source>New version of Monero v.%1 is available.&lt;br&gt;&lt;br&gt;Download:&lt;br&gt;%2&lt;br&gt;&lt;br&gt;SHA256 Hash:&lt;br&gt;%3</source>
-        <translation>Нова версія Monero v.%1 доступна. &lt;br&gt;&lt;br&gt;Завантажити:&lt;br&gt;%2&lt;br&gt;&lt;br&gt;SHA256 хеш:&lt;br&gt;%3</translation>
+        <source>New version of Crypcore v.%1 is available.&lt;br&gt;&lt;br&gt;Download:&lt;br&gt;%2&lt;br&gt;&lt;br&gt;SHA256 Hash:&lt;br&gt;%3</source>
+        <translation>Нова версія Crypcore v.%1 доступна. &lt;br&gt;&lt;br&gt;Завантажити:&lt;br&gt;%2&lt;br&gt;&lt;br&gt;SHA256 хеш:&lt;br&gt;%3</translation>
     </message>
     <message>
         <location filename="../main.qml" line="2172"/>
-        <source>New version of Monero is available. Check out getmonero.org</source>
-        <translation>Доступна нова версія Monero. Перевірте getmonero.org</translation>
+        <source>New version of Crypcore is available. Check out crypcore.com</source>
+        <translation>Доступна нова версія Crypcore. Перевірте crypcore.com</translation>
     </message>
     <message>
         <location filename="../main.qml" line="2263"/>
@@ -3554,7 +3554,7 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../main.qml" line="1077"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
+        <source>This address received %1 crypcore, but the transaction is not yet mined</source>
         <translation>Цей адрес отримав %1 XMR, але транзакція ще не була підтверджена майнерами</translation>
     </message>
     <message>
