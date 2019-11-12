@@ -40,10 +40,10 @@ Item {
     anchors.bottom: parent.bottom
 
     property bool small: false
-    property string shadowPressedColor: "#B32D00"
-    property string shadowReleasedColor: "#FF4304"
-    property string pressedColor: "#FF4304"
-    property string releasedColor: "#FF6C3C"
+    property string shadowPressedColor: "#2e056e"
+    property string shadowReleasedColor: "#4104a0"
+    property string pressedColor: "#4104a0"
+    property string releasedColor: "#5822AD"
     property string icon: ""
     property string textColor: MoneroComponents.Style.inlineButtonTextColor
     property int fontSize: small ? 14 : 16
