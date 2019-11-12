@@ -3462,7 +3462,7 @@ your input may be required.</source>
     <message>
         <location filename="../main.qml" line="1080"/>
         <source>This address received %1 crypcore, with %2 confirmation(s).</source>
-        <translation>Этот адрес получил %1 XMR, с %2 подтверждениями.</translation>
+        <translation>Этот адрес получил %1 COR, с %2 подтверждениями.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1091"/>
