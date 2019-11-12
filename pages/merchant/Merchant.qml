@@ -265,7 +265,7 @@ Item {
                     font.pixelSize: 12
                     font.bold: false
                     color: "white"
-                    text: "<style type='text/css'>a {text-decoration: none; color: #FF6C3C; font-size: 12px;}</style>Currently selected address: " + addressLabel + " <a href='#'>(Change)</a>"
+                    text: "<style type='text/css'>a {text-decoration: none; color: #6539AB; font-size: 12px;}</style>Currently selected address: " + addressLabel + " <a href='#'>(Change)</a>"
                     textFormat: Text.RichText
                     themeTransition: false
 
