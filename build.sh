@@ -64,7 +64,7 @@ fi
 source ./utils.sh
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-MONERO_DIR=crypcore
+MONERO_DIR=crypcored
 MONEROD_EXEC=crypcored
 
 MAKE='make'
@@ -79,7 +79,7 @@ export BUILD_TREZOR
 # build zxcvbn
 if [ "$DISABLE_PASS_STRENGTH_METER" != true ]; then
     $MAKE -C src/zxcvbn-c || exit
-fipcore
+fi
 
 if [ ! -d build ]; then mkdir build; fi
 
@@ -95,7 +95,7 @@ fi
 if [ "$platform" == "darwin" ]; then
     BIN_PATH=$BIN_PATH/crypcore-wallet-gui.app/Contents/MacOS/
 elif [ "$platform" == "mingw64" ] || [ "$platform" == "mingw32" ]; then
-    MONEROD_EXEC=crypcored.exe
+    MONEROD_EXEC=monerod.exe
 fi
 
 # force version update
@@ -121,4 +121,3 @@ fi
 
 # make deploy
 popd
-
