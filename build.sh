@@ -64,7 +64,7 @@ fi
 source ./utils.sh
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-MONERO_DIR=crypcored
+MONERO_DIR=crypcore
 MONEROD_EXEC=crypcored
 
 MAKE='make'
