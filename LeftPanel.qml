@@ -154,7 +154,7 @@ Rectangle {
                     anchors.leftMargin: 192
                     font.bold: true
                     font.pixelSize: 12
-                    color: "#f33434"
+                    color: "#1a1aff"
                     themeTransition: false
                 }
 
