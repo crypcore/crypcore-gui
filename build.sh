@@ -9,7 +9,7 @@ if [ -z $BUILD_TYPE ]; then
     BUILD_TYPE=release
 fi
 
-# Return 0 if the command exists, 1 if it does not.
+# Return 0 if the command exists, 1 if it does not. 
 exists() {
     command -v "$1" &>/dev/null
 }
