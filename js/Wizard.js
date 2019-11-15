@@ -134,6 +134,8 @@ function restoreWalletCheckViewSpendAddress(walletmanager, nettype, viewkey, spe
 //returns estimated block height with 1 month buffer prior to requested date.
 function getApproximateBlockchainHeight(_date, _nettype){
     // time of monero birth 2014-04-18 10:49:53 (1397818193)
+    return 0;
+    /*
     var crypcoreBirthTime = _nettype == "Mainnet" ? 1572578229 : _nettype == "Testnet" ? 1410295020 : 1518932025;
     // avg seconds per block in v1
     var secondsPerBlockV1 = 60;
@@ -178,5 +180,5 @@ function getApproximateBlockchainHeight(_date, _nettype){
     }
     else{
         return 0;
-    }
+    }*/
 }
