@@ -153,7 +153,7 @@ Rectangle {
                     labelFontSize: 14
                     copyButton: false
                     readOnly: true
-                    text: Utils.roundDownToNearestThousand(wizardController.m_wallet ? wizardController.m_wallet.walletCreationHeight : 0)
+                    text: Utils.roundDownToNearestThousand(wizardController.m_wallet ? 15000 : 15000)
                 }
 
                 MoneroComponents.WarningBox {
@@ -197,6 +197,7 @@ Rectangle {
                     wizardStateView.state = "wizardHome";
                 }
                 onNextClicked: {
+                wizardController.m_wallet.walletCreationHeight = 15000;
                     wizardController.walletOptionsName = walletInput.walletName.text;
                     wizardController.walletOptionsLocation = walletInput.walletLocation.text;
                     wizardStateView.state = "wizardCreateWallet2";
