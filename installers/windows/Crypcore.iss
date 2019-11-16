@@ -339,7 +339,7 @@ Name: "{group}\Utilities\x (Try GUI Wallet Low Graphics Mode)"; Filename: "{app}
 Name: "{group}\Utilities\x (Try Kill Daemon)"; Filename: "Taskkill.exe"; Parameters: "/IM crypcored.exe /T /F"
 
 ; Desktop icons, optional with the help of the "Task" section
-Name: "{commondesktop}\GUI Wallet"; Filename: "{app}\crypcore-wallet-gui.exe"; Tasks: desktopicon
+Name: "{commondesktop}\Crypcore Wallet"; Filename: "{app}\crypcore-wallet-gui.exe"; Tasks: desktopicon
 
 
 [Registry]
