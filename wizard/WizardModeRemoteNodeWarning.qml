@@ -97,10 +97,10 @@ Rectangle {
                 MoneroComponents.WarningBox {
                     Layout.topMargin: 14
                     Layout.bottomMargin: 6
-                    text: qsTr("Remain aware of these limitations. <b>Users who prioritize privacy and decentralization must use a full node instead</b>.") + translationManager.emptyString
+                    text: qsTr("Remain aware of these limitations. <b>Users who prioritize privacy and decentralization must use a full node instead</b>. By clicking next you agree that you understand these implications. A trusted third party server is the Crypcore Server 31.7.60.82:16381 ") + translationManager.emptyString
                 }
 
-                MoneroComponents.CheckBox {
+                /*MoneroComponents.CheckBox {
                     id: understoodCheckbox
                     Layout.topMargin: 20
                     fontSize: 16
@@ -108,11 +108,11 @@ Rectangle {
                     onClicked: {
                         wizardModeRemoteNodeWarning.understood = !wizardModeRemoteNodeWarning.understood
                     }
-                }
+                }*/
 
                 WizardNav {
                     Layout.topMargin: 4
-                    btnNext.enabled: wizardModeRemoteNodeWarning.understood
+                    btnNext.enabled: true
                     progressSteps: 0
 
                     onPrevClicked: {

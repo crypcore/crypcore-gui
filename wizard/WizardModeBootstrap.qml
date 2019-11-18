@@ -94,22 +94,22 @@ Rectangle {
                 MoneroComponents.WarningBox{
                     Layout.topMargin: 14
                     Layout.bottomMargin: 6
-                    text: qsTr("Remain aware of these limitations. <b>Users who prioritize privacy and decentralization must use a full node instead</b>.") + translationManager.emptyString
+                    text: qsTr("Remain aware of these limitations. <b>Users who prioritize privacy and decentralization must use a full node instead, By clicking next you agree that you understand these implications. A trusted third party server is the Crypcore Server 31.7.60.82:16381 </b>.") + translationManager.emptyString
                 }
 
-                MoneroComponents.CheckBox {
+               /* MoneroComponents.CheckBox {
                     id: understoodCheckbox
                     Layout.topMargin: 20
                     fontSize: 16
-                    text: qsTr("I understand the privacy implications of using a third-party server.") + translationManager.emptyString
+                    //text: qsTr("I understand the privacy implications of using a third-party server.") + translationManager.emptyString
                     onClicked: {
                         wizardModeBootstrapWarning.understood = !wizardModeBootstrapWarning.understood
                     }
-                }
+                }*/
 
                 WizardNav {
                     Layout.topMargin: 4
-                    btnNext.enabled: wizardModeBootstrapWarning.understood
+                    btnNext.enabled: true
                     progressSteps: 0
 
                     onPrevClicked: {
@@ -117,6 +117,7 @@ Rectangle {
                     }
 
                     onNextClicked: {
+
                         appWindow.changeWalletMode(1);
                         wizardController.wizardState = 'wizardHome';
                     }
