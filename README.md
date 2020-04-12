@@ -2,6 +2,8 @@
 Forked From Monero GUI
 Copyright (c) 2014-2019, The Monero Project
 
+The API used is very similar to Monero and Monero Documentation can be used at this moment in time.
+
 ## Development resources
 
 - Web: [getmonero.org](https://getmonero.org)
